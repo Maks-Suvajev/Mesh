@@ -1,7 +1,9 @@
-#include "SceneModel.h"
+/*#include "SceneModel.h"
 
 namespace gfx
 {
+
+
 
 void SceneModel::Draw(Shader* shader)
 {
@@ -187,4 +189,8 @@ unsigned int SceneModel::TextureFromFile(const char *path, const std::string &di
     return textureID;
 }
 
+
+
 }
+
+*/

@@ -1,6 +1,4 @@
 add_library(SceneModelLib 
-    source/Mesh.cpp
-    source/SceneModel.cpp
     source/SceneModelManager.cpp
 )
 
