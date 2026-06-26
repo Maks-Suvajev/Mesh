@@ -14,6 +14,7 @@ target_link_libraries(SceneModelLib
     PRIVATE 
         TypeLib
         ShaderLib # Need temporarily while the draw function is in the mesh
+        EntityLib
 )
 
 target_include_directories(SceneModelLib 

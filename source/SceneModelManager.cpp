@@ -11,6 +11,11 @@ namespace gfx
         refreshElements();
     }
 
+    void SceneModelManager::spawnModel(const std::string& key)
+    {
+         m_entityFactory->createRenderableEntity(getElementRef(key).sceneModelRoot);
+    }
+
     void SceneModelManager::registerElement(const std::filesystem::path& sourcePath)
     {
         std::string key;
