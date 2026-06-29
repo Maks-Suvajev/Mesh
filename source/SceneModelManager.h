@@ -8,7 +8,6 @@
 #include <iostream>
 
 // Custom Libs
-#include "SceneModel.h"
 #include "Shader.h"
 #include "ResourceManager.h"
 #include "TextureManager.h"

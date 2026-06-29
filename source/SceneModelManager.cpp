@@ -43,7 +43,8 @@ namespace gfx
 
     }
 
-    void SceneModelManager::drawScene(Shader* shader)
+    //TODO: commented out param to suppress error, can be uncommented once it's actually in use again
+    void SceneModelManager::drawScene(Shader* /*shader*/)
     {
          for (const auto& [key, element] : m_elements)
          {
@@ -229,7 +230,6 @@ namespace gfx
 
     GLuint SceneModelManager::getMaterialTexture(const aiMaterial* material, std::string_view modelSourcePath, aiTextureType type)
     {
-        aiReturn retVal;
         aiString texturePath;
 
         if (material->GetTexture(type, 0, &texturePath) == AI_SUCCESS)
