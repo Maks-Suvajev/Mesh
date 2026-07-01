@@ -25,6 +25,7 @@
 
 #include <QOpenGLExtraFunctions>
 
+#include <filesystem>
 
 namespace gfx
 {

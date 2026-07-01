@@ -33,13 +33,13 @@ namespace gfx
         if (m_elements.contains(key))
         {
             #ifdef ENABLE_DEBUG_MESSAGES
-                std::cout << "ERROR::Element already loaded with the key: " << sourcePath.string() << std::endl;
+                std::cout << "WARNING::Element already loaded with the key: " << sourcePath.string() << std::endl;
             #endif
 
             return;
         }
 
-        m_elements[key] = std::make_unique<gfx::SceneModel>(gfx::SceneModel{.sourceFileName = sourcePath.filename().string(), .sourceFilePath = sourcePath});
+        m_elements[key] = std::make_unique<gfx::SceneModel>(gfx::SceneModel{.sourceFileName = sourcePath.filename().string(), .sourceFilePath = std::filesystem::canonical(sourcePath)});
 
     }
 
